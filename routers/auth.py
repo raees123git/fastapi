@@ -49,10 +49,10 @@ def get_db():
 
 db_dependency = Annotated[Session, Depends(get_db)]
 
-templates = Jinja2Templates(directory='To_Do_App/templates')
+templates = Jinja2Templates(directory='templates')
 
 
-# app.mount('/static',StaticFiles(directory='To_Do_App/static'),name='static')
+# app.mount('/static',StaticFiles(directory='static'),name='static')
 
 # ###pages
 @router.get('/login-page')
