@@ -2,9 +2,9 @@ from typing import Annotated
 from fastapi import APIRouter, Depends, HTTPException, Path, status, Request
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
-from ..models import Todos, Users
-from ..database import SessionLocal
-from .auth import get_current_user
+from models import Todos, Users
+from database import SessionLocal
+from auth import get_current_user
 from starlette.responses import RedirectResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
