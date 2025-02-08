@@ -9,7 +9,7 @@ from starlette.responses import RedirectResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 
-templates = Jinja2Templates(directory='To_Do_App/templates')
+templates = Jinja2Templates(directory='templates')
 router = APIRouter(
     prefix='/todos',
     tags=['todos']
